@@ -1,0 +1,383 @@
+```css
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff 0%,
+            #f8fafc 45%,
+            #e0f2fe 100%
+        );
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    width: 94%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.container h1 {
+    padding: 28px 35px 8px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #0f172a;
+
+    letter-spacing: -0.5px;
+}
+
+.container > p {
+    padding: 0 35px 25px;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FILE UPLOAD SECTION
+========================================= */
+
+#fileInput {
+    display: block;
+
+    width: calc(100% - 70px);
+
+    margin: 0 35px 18px;
+
+    padding: 14px;
+
+    border: 2px dashed #cbd5e1;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+#fileInput:hover {
+    border-color: #6366f1;
+
+    background: #eef2ff;
+}
+
+#fileInput:focus {
+    outline: none;
+
+    border-color: #4f46e5;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+#viewButton {
+    display: block;
+
+    margin: 0 35px 20px;
+
+    padding: 13px 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #2563eb
+        );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+#viewButton:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(37, 99, 235, 0.30);
+}
+
+#viewButton:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.20);
+}
+
+#viewButton:focus {
+    outline: none;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.15),
+        0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   STATUS MESSAGE
+========================================= */
+
+#status {
+    margin: 0 35px 20px;
+
+    min-height: 24px;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PDF VIEWER
+========================================= */
+
+#pdfViewer {
+    display: block;
+
+    width: calc(100% - 70px);
+
+    height: 750px;
+
+    margin: 0 35px 35px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(15, 23, 42, 0.02),
+        0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 96%;
+
+        margin: 20px auto;
+
+        border-radius: 14px;
+    }
+
+    .container h1 {
+        padding: 22px 22px 8px;
+
+        font-size: 25px;
+    }
+
+    .container > p {
+        padding: 0 22px 20px;
+
+        font-size: 14px;
+    }
+
+    #fileInput {
+        width: calc(100% - 44px);
+
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    #viewButton {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    #status {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    #pdfViewer {
+        width: calc(100% - 44px);
+
+        height: 650px;
+
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        background: #f8fafc;
+    }
+
+    .container {
+        width: 100%;
+
+        margin: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+
+    .container h1 {
+        padding: 20px 18px 6px;
+
+        font-size: 23px;
+    }
+
+    .container > p {
+        padding: 0 18px 18px;
+    }
+
+    #fileInput {
+        width: calc(100% - 36px);
+
+        margin-left: 18px;
+        margin-right: 18px;
+
+        padding: 12px;
+    }
+
+    #viewButton {
+        width: calc(100% - 36px);
+
+        margin-left: 18px;
+        margin-right: 18px;
+
+        padding: 13px;
+    }
+
+    #status {
+        width: calc(100% - 36px);
+
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    #pdfViewer {
+        width: calc(100% - 36px);
+
+        height: 600px;
+
+        margin-left: 18px;
+        margin-right: 18px;
+
+        border-radius: 8px;
+    }
+}
+```

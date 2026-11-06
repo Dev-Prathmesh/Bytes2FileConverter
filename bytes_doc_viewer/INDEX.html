@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PDF Viewer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>PDF Viewer</h1>
+
+        <p>
+            Select the TXT file containing the PDF bytes.
+        </p>
+
+        <input
+            type="file"
+            id="fileInput"
+            accept=".txt"
+        >
+
+        <button id="viewButton">
+            View PDF
+        </button>
+
+        <p id="status"></p>
+
+        <iframe
+            id="pdfViewer"
+            style="display: none;"
+        ></iframe>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
